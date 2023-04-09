@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>time table</title>
     <style>
+        html{
+            scroll-behavior: smooth;
+        }
         h1{
             background-color: rgb(255, 151, 151);
             text-align: center;
@@ -33,7 +36,9 @@
 
         table{
             line-height: 2;
+        
             background-color:rgba(253, 163, 99, 0.512);
+
             border-style:groove;
             border-width: 0.4cqmax;
             text-align: center;
@@ -46,7 +51,6 @@
             color: floralwhite;
             background-blend-mode: darken;
             background-color:  rgb(198, 106, 101) ;
-
         }
         table>thead{
             background-color: rgb(184, 80, 80);
@@ -74,6 +78,13 @@
         
         .time{
             background-color: rgba(124, 9, 3, 0.449);
+        }
+        .EEn{
+            height:100vh ;
+            width: 100vw;
+        }
+        a{
+            text-decoration: none;
         }
 
     </style>
@@ -104,30 +115,31 @@
             <tr>
                 <td class="time">9:00-9:55</td>
                 <td></td>
-                <td rowspan="2">EEN-104</td>
+                <td rowspan="2"><a href="#EEN-4">EEN-004</a></td>
                 <td></td>
-                <td rowspan="2">PHN-004</td>
+                <td rowspan="2"><a href="#PHN">PHN-104</a></td>
                 <td></td>
             </tr>
             <tr>
                 <td class="time">10:00-10:55</td>
-                <td>MIN-106</td>
+                <td><a href="#MIN">MIN-106</a></td>
                 <td></td>
-                <td>MAN-002</td>
+                <td><a href="#MAN-2">MAN-002</a></td>
             </tr>
             <tr>
                 <td class="time">11:05-12:00</td>
                 <td></td>
                 <td></td>
-                <td rowspan="2">EEN-106</td>
-                <td rowspan="2">MIN-106</td>
-                <td>EEN-102</td>
+                <td rowspan="2" > <a href="#EEN-6"> EEN-106</a> </td>
+                <td rowspan="2" > <a href="#MIN"> MIN-106</a> </td>
+                
+                <td><a href="#EEN-2">EEN-102</a></td>
             </tr>
             <tr>
                 <td class="time">12:05-1:00</td>
                 <td></td>
                 <td></td>
-                <td>EEN-106</td>
+                <td  > <a href="#EEN"> EEN-106</a> </td>
             </tr>
             <tr >
                 <td  class="time">1:05-2:00</td>
@@ -135,46 +147,63 @@
             </tr>
             <tr>
                 <td class="time">2:00-2:55</td>
-                <td>MIN-106</td>
-                <td>MIN-106</td>
-                <td>EEN-106</td>
-                <td>MIN-106</td>
-                <td>EEN-106</td>
+                <td><a href="#MIN">MIN-106</a></td>
+                <td><a href="#MIN">MIN-106</a></td>
+                <td><a href="#EEN-6">EEN-106</a></td>
+                <td><a href="#MIN">MIN-106</a></td>
+                <td><a href="#EEN-6">EEN-106</a></td>
             </tr>
             <tr>
                 <td class="time">3:00-3:55</td>
-                <td>PHN-004</td>
-                <td>EEN-106</td>
-                <td>PHN-004</td>
-                <td>EEN-104</td>
-                <td>PHN-004</td>
+                <td><a href="#PHN">PHN-104</a></td>
+                <td><a href="#EEN-6">EEN-106</a></td>
+                <td><a href="#PHN">PHN-104</a></td>
+                <td><a href="#EEN-6">EEN-106</a></td>
+                <td><a href="#PHN">PHN-104</a></td>
             </tr>
             <tr>
                 <td class="time">4:05-5:00</td>
-                <td>EEN-102</td>
-                <td>EEN-104</td>
+                <td></a></td>
+                <td><a href="#EEN">EEN-106</a></td>
                 <td></td>
-                <td>EEN-102</td>
-                <td>EEN-104</td>
+                <td><a href="#EEN-2">EEN-102</a></td>
+                <td><a href="#EEN-4">EEN-104</a></td>
             </tr>
             <tr>
                 <td class="time">5:05-6:00</td>
-                <td>MAN-002</td>
-                <td>MAN-002</td>
+                <td><a href="#MAN-2">MAN-002</a></td>
+                <td><a href="#MAN-2">MAN-002</a></td>
                 <td></td>
-                <td>MAN-002</td>
-                <td>EEN-102</td>
+                <td><a href="#MAN-2">MAN-002</a></td>
+                <td><a href="#EEN-2">EEN-102</a></td>
             </tr>
         </tbody>
     </table>
-   
-    <ul>
-        <li>EEN-102: Network Theory</li>
+   <section id="EEN-2" class="EEn">
+    <li class="EEN">EEN-102: Network Theory</li>
+   </section>
+   <section id="EEN-4" class="EEn">
+    <li class="EEN">EEN-104:Electrical Measurement and Mechanical Instruments </li>
+   </section>
+   <section id="EEN-6" class="EEn">
+    <li class="EEN">EEN-106: Analog Electronics</li>
+   </section>
+   <section id="PHN" class="EEn">
+    <li class="EEN">PHN-004:Applied Physcis</li>
+   </section>
+   <section id="MIN" class="EEn">
+    <li class="EEN">MIN-106: Engineering Thermodynamics</li>
+   </section>
+   <section id="MAN-2" class="EEn">
+    <li class="EEN">MAN-002 : Mathematics-II </li>
+   </section>
+    
+        
         <li>EEN-104: Electrical Measurement and Mechanical Instruments</li>
         <li>EEN-106: Analog Electronics </li>
         <li>PHN-004: Applied Physcis</li>
         <li>MIN-106: Engineering Thermodynamics</li>
         <li>MAN-002: Mathematics-II </li>
-    </ul>
+    
 </body>
 </html>
